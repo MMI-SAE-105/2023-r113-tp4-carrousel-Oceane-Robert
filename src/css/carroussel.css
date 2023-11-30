@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   color: #fff;
-  background-color: black;
+  background-color: #000;
 }
 
   img {
@@ -63,11 +63,17 @@ body {
 0  1rem display flex gap  list-style 
 */
   .caroussel_liste-liens {
+    justify-content: center;
     display: flex; /* aligne horizontalement les enfants */
-    justify-self: center; /* centre horizontalement les enfants */
-    margin: 0; /* enlève les marges par défaut */
+    justify-self: center;
+    margin-left: 0 auto; /* enlève les marges par défaut */
     padding: none ; /* enlève les padding par défaut */
     list-style: none ; /* enlève les puces par défaut */
-    gap: 1rem; /* espace entre les enfants */
+    gap: 2rem; /* espace entre les enfants */
+  }
+
+  .actif {
+    background-color: #fff;
+    color: #000;
   }
   
