@@ -5,6 +5,9 @@ body {
   color: #fff;
   background-color: #000;
 }
+.caroussel_text{
+  font-family: 'Courier New', Courier, monospace;
+}
 
   img {
     display: block;
@@ -59,17 +62,23 @@ body {
   .carrousel_btn-apres {
     right: 0;
   }
-  /* en vrac :
-0  1rem display flex gap  list-style 
-*/
+ 
   .caroussel_liste-liens {
     justify-content: center;
-    display: flex; /* aligne horizontalement les enfants */
+    display: flex; 
     justify-self: center;
-    margin-left: 0 auto; /* enlève les marges par défaut */
-    padding: none ; /* enlève les padding par défaut */
-    list-style: none ; /* enlève les puces par défaut */
-    gap: 2rem; /* espace entre les enfants */
+    margin-left: 0 auto; 
+    padding: none ; 
+    list-style: none ; 
+    gap: 2rem; 
+    align-items: center;
+  }
+
+  .caroussel_lien {
+    color: #F5F7C3;
+    text-decoration: none;
+    border: 1px solid #fff; 
+    padding: 0.5rem 1rem;
   }
 
   .actif {
